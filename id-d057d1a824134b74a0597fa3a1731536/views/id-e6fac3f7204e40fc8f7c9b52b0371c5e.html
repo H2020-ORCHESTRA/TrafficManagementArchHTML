@@ -1,0 +1,454 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Decision Support</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Decision Support</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-e6fac3f7204e40fc8f7c9b52b0371c5e.png" alt="Decision Support" usemap="#id-e6fac3f7204e40fc8f7c9b52b0371c5emap"/>
+			   <map name="id-e6fac3f7204e40fc8f7c9b52b0371c5emap">
+				  		<area shape="rect" coords="478,58,598,113" href="../elements/id-e8ba7d67cd5040ebbd565903f55c2612.html"  target="element">
+				  		<area shape="rect" coords="238,58,358,113" href="../elements/id-61a0a1f6f72e4df9a0d49caadde09529.html"  target="element">
+				  				<area shape="rect" coords="766,46,886,101" href="../elements/id-d93e6e7e1d4747888a38469ad3c43a3b.html"  target="element">
+				  				<area shape="rect" coords="634,46,754,101" href="../elements/id-a54d56ae3c094f8fb0484f5b96fec9a0.html"  target="element">
+
+				  		<area shape="rect" coords="610,10,911,113" href="../elements/id-69361250690c47159ee74b5950a0505a.html"  target="element">
+				  		<area shape="rect" coords="10,58,130,113" href="../elements/id-c11660e2e0ad4d6ba5c9825cb6d62be6.html"  target="element">
+				  		<area shape="rect" coords="142,58,227,113" href="../elements/id-173f245fe1c14b2687bcac7332c37566.html"  target="element">
+				  		<area shape="rect" coords="370,58,467,113" href="../elements/id-c634000ef81e4a398c2bd54024792ff4.html"  target="element">
+				  						<area shape="rect" coords="478,442,598,497" href="../views/id-1d8697215b1248458db2e52ac7c81c61.html"  target="view">
+				  				    <!-- Other diagram objects -->
+
+				  				<area shape="rect" coords="442,418,623,509" href="../elements/id-73e7726d7233467ba81ee23d35b2de2f.html"  target="element">
+				  						<area shape="rect" coords="382,214,526,269" href="../elements/id-b5566fc07611414fa402cc7883e64288.html"  target="element">
+				  						<area shape="rect" coords="466,310,586,365" href="../elements/id-5a1a8d953ef644699eb6b2909b05fd6a.html"  target="element">
+				  								<area shape="rect" coords="718,226,838,281" href="../elements/id-6a22b804339c4b7db60cca89b8b55987.html"  target="element">
+				  								<area shape="rect" coords="718,310,839,371" href="../elements/id-eb5f9a142d0e4e66a33e9936e126671d.html"  target="element">
+
+				  						<area shape="rect" coords="694,190,863,383" href="../elements/id-7ee8263746554ec7b617a165377294cd.html"  target="element">
+				  								<area shape="rect" coords="46,298,179,353" href="../elements/id-49efcb2a14e848bbaae85aed7d4039c6.html"  target="element">
+				  								<area shape="rect" coords="46,226,179,281" href="../elements/id-c6c2c57f43d04e3490baf46798252183.html"  target="element">
+
+				  						<area shape="rect" coords="34,202,203,383" href="../elements/id-b1f47d31cdb14822844c69f044659cfe.html"  target="element">
+				  						<area shape="rect" coords="562,214,682,269" href="../elements/id-0310dcbda25f4224a2d6fb03b4e4fadf.html"  target="element">
+				  						<area shape="rect" coords="226,214,346,294" href="../elements/id-cb5d20e6410c414eb7a9c476a21cd8de.html"  target="element">
+
+				  				<area shape="rect" coords="22,178,887,395" href="../elements/id-cc78de0dd26642a2903f81d5349b494e.html"  target="element">
+
+				  		<area shape="rect" coords="10,142,911,527" href="../elements/id-2a0ec8e9df024ce1b5deeecee3733be3.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/id-2a0ec8e9df024ce1b5deeecee3733be3.html" target="element"> Traffic Orchestrator </a> </td>
+											    <td> <a href="../elements/id-2a0ec8e9df024ce1b5deeecee3733be3.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-cc78de0dd26642a2903f81d5349b494e.html" target="element"> Decision Support </a> </td>
+													    <td> <a href="../elements/id-cc78de0dd26642a2903f81d5349b494e.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-cb5d20e6410c414eb7a9c476a21cd8de.html" target="element"> Simulate Traffic Situation Evolution </a> </td>
+															    <td> <a href="../elements/id-cb5d20e6410c414eb7a9c476a21cd8de.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-0310dcbda25f4224a2d6fb03b4e4fadf.html" target="element"> Consult relevant knowledge </a> </td>
+															    <td> <a href="../elements/id-0310dcbda25f4224a2d6fb03b4e4fadf.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-b1f47d31cdb14822844c69f044659cfe.html" target="element"> Define Scenarios </a> </td>
+															    <td> <a href="../elements/id-b1f47d31cdb14822844c69f044659cfe.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+															</tr>
+
+																	<tr>
+																	    <td> <a href="../elements/id-c6c2c57f43d04e3490baf46798252183.html" target="element"> Define Traffic Scenarios </a> </td>
+																	    <td> <a href="../elements/id-c6c2c57f43d04e3490baf46798252183.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+																	</tr>
+
+																	<tr>
+																	    <td> <a href="../elements/id-49efcb2a14e848bbaae85aed7d4039c6.html" target="element"> Define Measure Application Timeline </a> </td>
+																	    <td> <a href="../elements/id-49efcb2a14e848bbaae85aed7d4039c6.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+																	</tr>
+
+															
+															<tr>
+															    <td> <a href="../elements/id-7ee8263746554ec7b617a165377294cd.html" target="element"> Maintain knowledge base </a> </td>
+															    <td> <a href="../elements/id-7ee8263746554ec7b617a165377294cd.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+															</tr>
+
+																	<tr>
+																	    <td> <a href="../elements/id-eb5f9a142d0e4e66a33e9936e126671d.html" target="element"> Register Case and Measure Effects </a> </td>
+																	    <td> <a href="../elements/id-eb5f9a142d0e4e66a33e9936e126671d.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+																	</tr>
+
+																	<tr>
+																	    <td> <a href="../elements/id-6a22b804339c4b7db60cca89b8b55987.html" target="element"> Analyze Effect of Measures </a> </td>
+																	    <td> <a href="../elements/id-6a22b804339c4b7db60cca89b8b55987.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+																	</tr>
+
+															
+															<tr>
+															    <td> <a href="../elements/id-5a1a8d953ef644699eb6b2909b05fd6a.html" target="element"> Use Traffic Situation Dashboard </a> </td>
+															    <td> <a href="../elements/id-5a1a8d953ef644699eb6b2909b05fd6a.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/id-b5566fc07611414fa402cc7883e64288.html" target="element"> Detect Current and Potential Issues </a> </td>
+															    <td> <a href="../elements/id-b5566fc07611414fa402cc7883e64288.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+															</tr>
+
+													
+													<tr>
+													    <td> <a href="../elements/id-73e7726d7233467ba81ee23d35b2de2f.html" target="element"> Decision Making </a> </td>
+													    <td> <a href="../elements/id-73e7726d7233467ba81ee23d35b2de2f.html" target="element" class="i18n-elementtype-BusinessService"> </a> </td>
+													</tr>
+
+															<tr>
+															    <td> <a href="../views/id-1d8697215b1248458db2e52ac7c81c61.html" target="view"> Decision Making </a> </td>
+															    <td> <a href="../views/id-1d8697215b1248458db2e52ac7c81c61.html" target="view" class="i18n-viewpoint-"> </a> </td>
+															</tr>
+													    <!-- Other graphical objects -->
+
+													
+											
+											<tr>
+											    <td> <a href="../elements/id-c634000ef81e4a398c2bd54024792ff4.html" target="element"> Traffic Situation </a> </td>
+											    <td> <a href="../elements/id-c634000ef81e4a398c2bd54024792ff4.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-173f245fe1c14b2687bcac7332c37566.html" target="element"> Operation Plan </a> </td>
+											    <td> <a href="../elements/id-173f245fe1c14b2687bcac7332c37566.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-c11660e2e0ad4d6ba5c9825cb6d62be6.html" target="element"> Transport Operations </a> </td>
+											    <td> <a href="../elements/id-c11660e2e0ad4d6ba5c9825cb6d62be6.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-69361250690c47159ee74b5950a0505a.html" target="element"> Knowledge base </a> </td>
+											    <td> <a href="../elements/id-69361250690c47159ee74b5950a0505a.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-a54d56ae3c094f8fb0484f5b96fec9a0.html" target="element"> Historical Traffic Data </a> </td>
+													    <td> <a href="../elements/id-a54d56ae3c094f8fb0484f5b96fec9a0.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-d93e6e7e1d4747888a38469ad3c43a3b.html" target="element"> Measure Effects </a> </td>
+													    <td> <a href="../elements/id-d93e6e7e1d4747888a38469ad3c43a3b.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-61a0a1f6f72e4df9a0d49caadde09529.html" target="element"> Network Information </a> </td>
+											    <td> <a href="../elements/id-61a0a1f6f72e4df9a0d49caadde09529.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-e8ba7d67cd5040ebbd565903f55c2612.html" target="element"> Action Plan </a> </td>
+											    <td> <a href="../elements/id-e8ba7d67cd5040ebbd565903f55c2612.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/id-c6017b5cb00f4e5ca4fe7a9d6f7a0455.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-c6017b5cb00f4e5ca4fe7a9d6f7a0455.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/id-2a0ec8e9df024ce1b5deeecee3733be3.html" target="element"> Traffic Orchestrator </a> </td>
+																		<td> <a href="../elements/id-cc78de0dd26642a2903f81d5349b494e.html" target="element"> Decision Support </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-a11e88621b394a30a534a5fa30a499f1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-a11e88621b394a30a534a5fa30a499f1.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/id-2a0ec8e9df024ce1b5deeecee3733be3.html" target="element"> Traffic Orchestrator </a> </td>
+																		<td> <a href="../elements/id-73e7726d7233467ba81ee23d35b2de2f.html" target="element"> Decision Making </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-897dbab0d872439dbb1fc89b265080fb.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-897dbab0d872439dbb1fc89b265080fb.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																				<td> <a href="../elements/id-cc78de0dd26642a2903f81d5349b494e.html" target="element"> Decision Support </a> </td>
+																				<td> <a href="../elements/id-cb5d20e6410c414eb7a9c476a21cd8de.html" target="element"> Simulate Traffic Situation Evolution </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-eac9cdcb50394f91bad9ac5953963b40.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-eac9cdcb50394f91bad9ac5953963b40.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																				<td> <a href="../elements/id-cc78de0dd26642a2903f81d5349b494e.html" target="element"> Decision Support </a> </td>
+																				<td> <a href="../elements/id-0310dcbda25f4224a2d6fb03b4e4fadf.html" target="element"> Consult relevant knowledge </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-bacf7d12d5d14fdda999c14d0848e2ee.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-bacf7d12d5d14fdda999c14d0848e2ee.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																				<td> <a href="../elements/id-cc78de0dd26642a2903f81d5349b494e.html" target="element"> Decision Support </a> </td>
+																				<td> <a href="../elements/id-b1f47d31cdb14822844c69f044659cfe.html" target="element"> Define Scenarios </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-2339e8074ebf4c5cbb36a7eafbb88aa4.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-2339e8074ebf4c5cbb36a7eafbb88aa4.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																				<td> <a href="../elements/id-cc78de0dd26642a2903f81d5349b494e.html" target="element"> Decision Support </a> </td>
+																				<td> <a href="../elements/id-7ee8263746554ec7b617a165377294cd.html" target="element"> Maintain knowledge base </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-a2302e3e5f1b4a59952887334fd74367.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-a2302e3e5f1b4a59952887334fd74367.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																				<td> <a href="../elements/id-cc78de0dd26642a2903f81d5349b494e.html" target="element"> Decision Support </a> </td>
+																				<td> <a href="../elements/id-5a1a8d953ef644699eb6b2909b05fd6a.html" target="element"> Use Traffic Situation Dashboard </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-0ab4a31030e14bad82d39ce0227e72fa.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-0ab4a31030e14bad82d39ce0227e72fa.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																				<td> <a href="../elements/id-cc78de0dd26642a2903f81d5349b494e.html" target="element"> Decision Support </a> </td>
+																				<td> <a href="../elements/id-b5566fc07611414fa402cc7883e64288.html" target="element"> Detect Current and Potential Issues </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-b199c72e0afa4c0abc2dfa4b68924d58.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-b199c72e0afa4c0abc2dfa4b68924d58.html" target="element" class="i18n-elementtype-AccessRelationship"></a> </td>
+																				<td> <a href="../elements/id-cc78de0dd26642a2903f81d5349b494e.html" target="element"> Decision Support </a> </td>
+																				<td> <a href="../elements/id-61a0a1f6f72e4df9a0d49caadde09529.html" target="element"> Network Information </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-504cade89cc44b178fd1daa7bf3e9e07.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-504cade89cc44b178fd1daa7bf3e9e07.html" target="element" class="i18n-elementtype-AccessRelationship"></a> </td>
+																				<td> <a href="../elements/id-cc78de0dd26642a2903f81d5349b494e.html" target="element"> Decision Support </a> </td>
+																				<td> <a href="../elements/id-173f245fe1c14b2687bcac7332c37566.html" target="element"> Operation Plan </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-5f9c630be86a4ea79738cd4992b7561a.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-5f9c630be86a4ea79738cd4992b7561a.html" target="element" class="i18n-elementtype-AccessRelationship"></a> </td>
+																				<td> <a href="../elements/id-cc78de0dd26642a2903f81d5349b494e.html" target="element"> Decision Support </a> </td>
+																				<td> <a href="../elements/id-c11660e2e0ad4d6ba5c9825cb6d62be6.html" target="element"> Transport Operations </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-a14aabb3d327443ba7eafaec8ff2ceb2.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-a14aabb3d327443ba7eafaec8ff2ceb2.html" target="element" class="i18n-elementtype-AccessRelationship"></a> </td>
+																				<td> <a href="../elements/id-cc78de0dd26642a2903f81d5349b494e.html" target="element"> Decision Support </a> </td>
+																				<td> <a href="../elements/id-69361250690c47159ee74b5950a0505a.html" target="element"> Knowledge base </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/id-553b8da85fcc41eaa244162983f11f3d.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-553b8da85fcc41eaa244162983f11f3d.html" target="element" class="i18n-elementtype-AccessRelationship"></a> </td>
+																				<td> <a href="../elements/id-cc78de0dd26642a2903f81d5349b494e.html" target="element"> Decision Support </a> </td>
+																				<td> <a href="../elements/id-c634000ef81e4a398c2bd54024792ff4.html" target="element"> Traffic Situation </a> </td>
+																			</tr>
+
+																					<tr>
+																						<td> <a href="../elements/id-a5c13502f5a24e28ae6fd07d902d28e2.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-a5c13502f5a24e28ae6fd07d902d28e2.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																						<td> <a href="../elements/id-cb5d20e6410c414eb7a9c476a21cd8de.html" target="element"> Simulate Traffic Situation Evolution </a> </td>
+																						<td> <a href="../elements/id-73e7726d7233467ba81ee23d35b2de2f.html" target="element"> Decision Making </a> </td>
+																					</tr>
+																					<tr>
+																						<td> <a href="../elements/id-6056f8618fdc4396861b583a6f3f7419.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-6056f8618fdc4396861b583a6f3f7419.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																						<td> <a href="../elements/id-cb5d20e6410c414eb7a9c476a21cd8de.html" target="element"> Simulate Traffic Situation Evolution </a> </td>
+																						<td> <a href="../elements/id-b5566fc07611414fa402cc7883e64288.html" target="element"> Detect Current and Potential Issues </a> </td>
+																					</tr>
+
+																					<tr>
+																						<td> <a href="../elements/id-c8e1ecf195eb4c28bfb5e773ff1fa09d.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-c8e1ecf195eb4c28bfb5e773ff1fa09d.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																						<td> <a href="../elements/id-0310dcbda25f4224a2d6fb03b4e4fadf.html" target="element"> Consult relevant knowledge </a> </td>
+																						<td> <a href="../elements/id-73e7726d7233467ba81ee23d35b2de2f.html" target="element"> Decision Making </a> </td>
+																					</tr>
+																					<tr>
+																						<td> <a href="../elements/id-7d39b0f471b742ffac4f4566fbf62018.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-7d39b0f471b742ffac4f4566fbf62018.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																						<td> <a href="../elements/id-0310dcbda25f4224a2d6fb03b4e4fadf.html" target="element"> Consult relevant knowledge </a> </td>
+																						<td> <a href="../elements/id-b5566fc07611414fa402cc7883e64288.html" target="element"> Detect Current and Potential Issues </a> </td>
+																					</tr>
+
+																					<tr>
+																						<td> <a href="../elements/id-aa222050fa8d4812a62a1903bdeb2d1f.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-aa222050fa8d4812a62a1903bdeb2d1f.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																						<td> <a href="../elements/id-b1f47d31cdb14822844c69f044659cfe.html" target="element"> Define Scenarios </a> </td>
+																						<td> <a href="../elements/id-c6c2c57f43d04e3490baf46798252183.html" target="element"> Define Traffic Scenarios </a> </td>
+																					</tr>
+																					<tr>
+																						<td> <a href="../elements/id-10d9ffcc6eab44eca7a10dc46f664f4b.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-10d9ffcc6eab44eca7a10dc46f664f4b.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																						<td> <a href="../elements/id-b1f47d31cdb14822844c69f044659cfe.html" target="element"> Define Scenarios </a> </td>
+																						<td> <a href="../elements/id-49efcb2a14e848bbaae85aed7d4039c6.html" target="element"> Define Measure Application Timeline </a> </td>
+																					</tr>
+																					<tr>
+																						<td> <a href="../elements/id-e089cbb5c178499289687cd4119e268e.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-e089cbb5c178499289687cd4119e268e.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																						<td> <a href="../elements/id-b1f47d31cdb14822844c69f044659cfe.html" target="element"> Define Scenarios </a> </td>
+																						<td> <a href="../elements/id-cb5d20e6410c414eb7a9c476a21cd8de.html" target="element"> Simulate Traffic Situation Evolution </a> </td>
+																					</tr>
+
+															
+																					<tr>
+																						<td> <a href="../elements/id-dc4019cb32324a41b44f7312926b4300.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-dc4019cb32324a41b44f7312926b4300.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																						<td> <a href="../elements/id-7ee8263746554ec7b617a165377294cd.html" target="element"> Maintain knowledge base </a> </td>
+																						<td> <a href="../elements/id-eb5f9a142d0e4e66a33e9936e126671d.html" target="element"> Register Case and Measure Effects </a> </td>
+																					</tr>
+																					<tr>
+																						<td> <a href="../elements/id-b5b03220780d470fb190b1326a142fa4.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-b5b03220780d470fb190b1326a142fa4.html" target="element" class="i18n-elementtype-AccessRelationship"></a> </td>
+																						<td> <a href="../elements/id-7ee8263746554ec7b617a165377294cd.html" target="element"> Maintain knowledge base </a> </td>
+																						<td> <a href="../elements/id-69361250690c47159ee74b5950a0505a.html" target="element"> Knowledge base </a> </td>
+																					</tr>
+																					<tr>
+																						<td> <a href="../elements/id-530d329b491d43f38d0a723a133c11fb.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-530d329b491d43f38d0a723a133c11fb.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																						<td> <a href="../elements/id-7ee8263746554ec7b617a165377294cd.html" target="element"> Maintain knowledge base </a> </td>
+																						<td> <a href="../elements/id-6a22b804339c4b7db60cca89b8b55987.html" target="element"> Analyze Effect of Measures </a> </td>
+																					</tr>
+
+																							<tr>
+																								<td> <a href="../elements/id-384a6ef167a8440dbf439fcaa5c3efed.html" target="element">  </a> </td>
+																								<td> <a href="../elements/id-384a6ef167a8440dbf439fcaa5c3efed.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																								<td> <a href="../elements/id-6a22b804339c4b7db60cca89b8b55987.html" target="element"> Analyze Effect of Measures </a> </td>
+																								<td> <a href="../elements/id-eb5f9a142d0e4e66a33e9936e126671d.html" target="element"> Register Case and Measure Effects </a> </td>
+																							</tr>
+																							<tr>
+																								<td> <a href="../elements/id-7135133234654e479c45547788ac72cf.html" target="element">  </a> </td>
+																								<td> <a href="../elements/id-7135133234654e479c45547788ac72cf.html" target="element" class="i18n-elementtype-AccessRelationship"></a> </td>
+																								<td> <a href="../elements/id-6a22b804339c4b7db60cca89b8b55987.html" target="element"> Analyze Effect of Measures </a> </td>
+																								<td> <a href="../elements/id-e8ba7d67cd5040ebbd565903f55c2612.html" target="element"> Action Plan </a> </td>
+																							</tr>
+
+															
+																					<tr>
+																						<td> <a href="../elements/id-0bb0b0adfda4445892cae09d49ccdbfd.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-0bb0b0adfda4445892cae09d49ccdbfd.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																						<td> <a href="../elements/id-5a1a8d953ef644699eb6b2909b05fd6a.html" target="element"> Use Traffic Situation Dashboard </a> </td>
+																						<td> <a href="../elements/id-73e7726d7233467ba81ee23d35b2de2f.html" target="element"> Decision Making </a> </td>
+																					</tr>
+
+																					<tr>
+																						<td> <a href="../elements/id-234859c08cb64112abfc94a5aa46a0bc.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-234859c08cb64112abfc94a5aa46a0bc.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																						<td> <a href="../elements/id-b5566fc07611414fa402cc7883e64288.html" target="element"> Detect Current and Potential Issues </a> </td>
+																						<td> <a href="../elements/id-5a1a8d953ef644699eb6b2909b05fd6a.html" target="element"> Use Traffic Situation Dashboard </a> </td>
+																					</tr>
+																					<tr>
+																						<td> <a href="../elements/id-c7d06604c82c40c8959bc46a6161b99d.html" target="element">  </a> </td>
+																						<td> <a href="../elements/id-c7d06604c82c40c8959bc46a6161b99d.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																						<td> <a href="../elements/id-b5566fc07611414fa402cc7883e64288.html" target="element"> Detect Current and Potential Issues </a> </td>
+																						<td> <a href="../elements/id-73e7726d7233467ba81ee23d35b2de2f.html" target="element"> Decision Making </a> </td>
+																					</tr>
+																					<tr>
+																						<td> <a href="../elements/id-7ecf05a8f3774aa786a0bbeb67c07798.html" target="element"> predictions </a> </td>
+																						<td> <a href="../elements/id-7ecf05a8f3774aa786a0bbeb67c07798.html" target="element" class="i18n-elementtype-AccessRelationship"></a> </td>
+																						<td> <a href="../elements/id-b5566fc07611414fa402cc7883e64288.html" target="element"> Detect Current and Potential Issues </a> </td>
+																						<td> <a href="../elements/id-c634000ef81e4a398c2bd54024792ff4.html" target="element"> Traffic Situation </a> </td>
+																					</tr>
+
+													
+															<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelReference -->
+													
+											
+																	<tr>
+																		<td> <a href="../elements/id-62f372ea2a3d4201a0c0bc840b7074bd.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-62f372ea2a3d4201a0c0bc840b7074bd.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-69361250690c47159ee74b5950a0505a.html" target="element"> Knowledge base </a> </td>
+																		<td> <a href="../elements/id-a54d56ae3c094f8fb0484f5b96fec9a0.html" target="element"> Historical Traffic Data </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-71c6e070c730461ba7424662cd5c8865.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-71c6e070c730461ba7424662cd5c8865.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-69361250690c47159ee74b5950a0505a.html" target="element"> Knowledge base </a> </td>
+																		<td> <a href="../elements/id-d93e6e7e1d4747888a38469ad3c43a3b.html" target="element"> Measure Effects </a> </td>
+																	</tr>
+
+											
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
