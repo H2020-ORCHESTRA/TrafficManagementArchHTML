@@ -19,8 +19,9 @@ function createLinks(text) {
 var hints = {
 // Hints for viewpoints
     viewpoint_: "view.html",
-	viewpoint_application_cooperation: "vp_application_cooperation.html",
+    viewpoint_application_cooperation: "vp_application_cooperation.html",
     viewpoint_application_usage: "vp_application_usage.html",
+    viewpoint_application_structure: "vp_application_structure.html",
     viewpoint_business_process_cooperation: "vp_business_process_cooperation.html",
     viewpoint_capability: "vp_capability.html",
     viewpoint_goal_realization: "vp_goal_realization.html",
@@ -131,6 +132,13 @@ var hints = {
 	CanvasModelSticky: "canvas_sticky.html",
 };
 
+function sortTable(tblSelector) {
+    var tblBody = $(tblSelector+' > tbody');
+    var tblRows = tblBody.children('tr').sort(strcmp);
+    console.debug('Sorted rows at '+tblSelector+' resulting in : '+tblRows+'.')
+    tblRows.appendTo(tblBody);
+}
+
 $(document).ready(function() {
 	// Set heigh of panels the first time
 	setRootPanelHeight();
@@ -140,10 +148,10 @@ $(document).ready(function() {
 		setRootPanelHeight();
 		e.stopPropagation();
 	});
-	
+
 	// Create links in this class
     $('.convertlinks').each(function() {
-        $(this).html(createLinks($(this).text()));
+        $(this).html(createLinks($(this).html()));
     });
 
 	// Replace Hint URL
@@ -153,10 +161,83 @@ $(document).ready(function() {
 	}
 	
 	// Sort 'elements' and 'properties' tables
-	var tabElements = $('#elements > table > tbody');
-	var tabElementsRows = tabElements.children('tr');
-	tabElementsRows.sort(strcmp).appendTo(tabElements);
-	var tabProperties = $('#properties > table > tbody');
-	var tabPropertiesRows = tabProperties.children('tr');
-	tabPropertiesRows.sort(strcmp).appendTo(tabProperties);
+    sortTable('#elements > table');
+    sortTable('#properties > table')
+
+    $('#used-in-views > tbody > tr').each(function(){
+        var id = $(this).attr('id');
+        var idCount = $('#used-in-views > tbody > tr#' + id).length;
+        console.debug('used-in-view #'+id+' found '+idCount+' times.');
+        if (idCount > 1)
+            $(this).remove();
+    });
+
+    sortTable('table#used-in-views');
+    /*
+     TODO sort-by-column otherwise empty-relation-name makes source-name be compared with other relation-names
+     */
+    //sortTable('table#model-relations')
+
+	const type = document.location.href.split('/').slice(-2, -1).pop();
+	if (type == "views") {
+		// *** DEEP LINKS ***
+		// Notify the root frameset of the new view id
+		const viewId = document.location.href.split('/').pop().slice(0,-5);
+		parent.window.postMessage('view-id=' + viewId, '*');
+
+		// *** DIAGRAM ZOOM ***
+		//initZoomSlider();
+		//window.addEventListener('load', initZoomSlider);
+		setTimeout(initZoomSlider, 50);
+	}
+
+	function initZoomSlider() {
+		const sliderHtml = ' \
+		<div class="row" id="zoomSlider"> \
+			<div class="col-xs-1" id="btnZoomOut"><span class="glyphicon glyphicon-minus"></span></div> \
+			<div class="col-xs-7"><input type="range" min="100" max="400" value="100" id="zoomRange"></div> \
+			<div class="col-xs-1" id="btnZoomIn"><span class="glyphicon glyphicon-plus"></span></div> \
+		</div>';
+		
+		// Inject slider widget
+		document.getElementsByClassName("panel-heading")[0].innerHTML += sliderHtml;
+		
+		// Get reference to slider and image
+		var slider = document.getElementById("zoomRange");
+		let img = document.getElementsByClassName("diagram")[0];
+		let imgNativeWidth = img.width;
+		const step = 10;
+
+		function setZoom() {
+			img.style.maxWidth = slider.value + "%";
+			img.style.width = (imgNativeWidth * slider.value / 100) + "px";
+			imageMapResize();
+			window.focus();
+		}
+		
+		// Internet Explorer doesn't trigger input events so we have to hook on the change event
+		slider.onchange = setZoom;
+		
+		// Other browser should work
+		slider.oninput = setZoom;
+
+		// Register events on plus/minus buttons
+		document.getElementById("btnZoomOut").onclick = function () {
+			slider.value = ((parseInt(slider.value)) - step);
+			setZoom();
+		}
+		document.getElementById("btnZoomIn").onclick = function () {
+			slider.value = ((parseInt(slider.value)) + step);
+			setZoom();
+		}
+		// Register events wheel on root-panel-body
+		document.getElementsByClassName("root-panel-body")[0].addEventListener("wheel", function(e) {
+			// Zooming happens here
+			if (e.ctrlKey) {
+				e.preventDefault()
+				slider.value = ((parseInt(slider.value)) - e.deltaY/10)
+				setZoom()
+			}
+		})
+	}
 });

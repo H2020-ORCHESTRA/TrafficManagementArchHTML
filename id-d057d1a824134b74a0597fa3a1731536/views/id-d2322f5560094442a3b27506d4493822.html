@@ -1,14 +1,13 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	<title>Transport Service Provider Drivers WS2</title>
 
-	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
-	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
 	<!-- BOOTSTRAP -->
-	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
-	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
 	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
 	<!-- REPORT SPECIFIC -->
 	<link type="text/css" rel="stylesheet" href="../../css/model.css">
@@ -96,6 +95,8 @@
                     <!-- Properties -->
                     <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
 
+                    <!-- Analysis -->
+
 						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
 						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
                     <!-- Model, Query Tab -->
@@ -118,6 +119,32 @@
 							</tbody>
 						</table>
 					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
 						<div role="tabpanel" class="tab-pane" id="elements">
 							<table class="table table-striped table-hover table-condensed">
 								<thead>
@@ -129,27 +156,32 @@
 								<tbody>
 											<tr>
 											    <td> <a href="../elements/id-4c5a2cfc85e344f6a12a43e394cb1c9f.html" target="element"> Transport Service Provider </a> </td>
-											    <td> <a href="../elements/id-4c5a2cfc85e344f6a12a43e394cb1c9f.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-4c5a2cfc85e344f6a12a43e394cb1c9f.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-334170d300434a5782f39eab098019d7.html" target="element"> oCosts </a> </td>
-											    <td> <a href="../elements/id-334170d300434a5782f39eab098019d7.html" target="element" class="i18n-elementtype-Driver"> </a> </td>
+											    <td> <a href="../elements/id-334170d300434a5782f39eab098019d7.html" target="element" class="i18n-elementtype-Driver">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-60b5f362984d424b957ccc24119167f9.html" target="element"> oPredictable transport chains </a> </td>
-											    <td> <a href="../elements/id-60b5f362984d424b957ccc24119167f9.html" target="element" class="i18n-elementtype-Driver"> </a> </td>
+											    <td> <a href="../elements/id-60b5f362984d424b957ccc24119167f9.html" target="element" class="i18n-elementtype-Driver">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-2df92a01daa040c1be435a4c6c2d7f36.html" target="element"> oEfficient transport chains </a> </td>
-											    <td> <a href="../elements/id-2df92a01daa040c1be435a4c6c2d7f36.html" target="element" class="i18n-elementtype-Driver"> </a> </td>
+											    <td> <a href="../elements/id-2df92a01daa040c1be435a4c6c2d7f36.html" target="element" class="i18n-elementtype-Driver">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-0f80e6bb641040438e190fa5352fafc0.html" target="element"> oRevenue </a> </td>
-											    <td> <a href="../elements/id-0f80e6bb641040438e190fa5352fafc0.html" target="element" class="i18n-elementtype-Driver"> </a> </td>
+											    <td> <a href="../elements/id-0f80e6bb641040438e190fa5352fafc0.html" target="element" class="i18n-elementtype-Driver">
+											    </a> </td>
 											</tr>
 
 									        <tr>
@@ -164,67 +196,80 @@
 
 											<tr>
 											    <td> <a href="../elements/id-7cc7018a8a7c440983c9d097c50e9e0d.html" target="element"> Low flexibility  </a> </td>
-											    <td> <a href="../elements/id-7cc7018a8a7c440983c9d097c50e9e0d.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-7cc7018a8a7c440983c9d097c50e9e0d.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-ecfcc076f00345049c6f1f88bccbc2da.html" target="element"> Depend on information from fleet operator </a> </td>
-											    <td> <a href="../elements/id-ecfcc076f00345049c6f1f88bccbc2da.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-ecfcc076f00345049c6f1f88bccbc2da.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-00c1750fe0c6463aba0af4c6e0e7f430.html" target="element"> Business models limit flexibility in case of network problems </a> </td>
-											    <td> <a href="../elements/id-00c1750fe0c6463aba0af4c6e0e7f430.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-00c1750fe0c6463aba0af4c6e0e7f430.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-7af4c372cba84b0ba4614f654a65d8ac.html" target="element"> Business models do not reward collaboration </a> </td>
-											    <td> <a href="../elements/id-7af4c372cba84b0ba4614f654a65d8ac.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-7af4c372cba84b0ba4614f654a65d8ac.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-af65e30e0b7844d796ba6fb73d64d4c9.html" target="element"> oResilient transport chains </a> </td>
-											    <td> <a href="../elements/id-af65e30e0b7844d796ba6fb73d64d4c9.html" target="element" class="i18n-elementtype-Driver"> </a> </td>
+											    <td> <a href="../elements/id-af65e30e0b7844d796ba6fb73d64d4c9.html" target="element" class="i18n-elementtype-Driver">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-c0b6e2461a1a40f19a7e674e43ce97b4.html" target="element"> Insufficient adaption to current and upcoming traffic situations </a> </td>
-											    <td> <a href="../elements/id-c0b6e2461a1a40f19a7e674e43ce97b4.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-c0b6e2461a1a40f19a7e674e43ce97b4.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-733d673a125149fd964a0a25d53a2122.html" target="element"> oGreen transport </a> </td>
-											    <td> <a href="../elements/id-733d673a125149fd964a0a25d53a2122.html" target="element" class="i18n-elementtype-Driver"> </a> </td>
+											    <td> <a href="../elements/id-733d673a125149fd964a0a25d53a2122.html" target="element" class="i18n-elementtype-Driver">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-8810a9364eea4d63b301bc5b6fa62a17.html" target="element"> oSustainability </a> </td>
-											    <td> <a href="../elements/id-8810a9364eea4d63b301bc5b6fa62a17.html" target="element" class="i18n-elementtype-Driver"> </a> </td>
+											    <td> <a href="../elements/id-8810a9364eea4d63b301bc5b6fa62a17.html" target="element" class="i18n-elementtype-Driver">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-a23ae759763f4675911c405be93437a8.html" target="element"> oCustomer satisfaction </a> </td>
-											    <td> <a href="../elements/id-a23ae759763f4675911c405be93437a8.html" target="element" class="i18n-elementtype-Driver"> </a> </td>
+											    <td> <a href="../elements/id-a23ae759763f4675911c405be93437a8.html" target="element" class="i18n-elementtype-Driver">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-b603962edf384873a6ecc12c05550fa0.html" target="element"> Green is important for public image </a> </td>
-											    <td> <a href="../elements/id-b603962edf384873a6ecc12c05550fa0.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-b603962edf384873a6ecc12c05550fa0.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-51d33d72b9ba4cbdb5c3024ee2a31137.html" target="element"> No profit linked to data sharing </a> </td>
-											    <td> <a href="../elements/id-51d33d72b9ba4cbdb5c3024ee2a31137.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-51d33d72b9ba4cbdb5c3024ee2a31137.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-fea21e980fbb40b9b23e78ae0857177a.html" target="element"> Limited data sharing with traffic orchestrator </a> </td>
-											    <td> <a href="../elements/id-fea21e980fbb40b9b23e78ae0857177a.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-fea21e980fbb40b9b23e78ae0857177a.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-e004d51ed9fc48fb9db5a514455617f2.html" target="element"> oSafety for people and goods </a> </td>
-											    <td> <a href="../elements/id-e004d51ed9fc48fb9db5a514455617f2.html" target="element" class="i18n-elementtype-Driver"> </a> </td>
+											    <td> <a href="../elements/id-e004d51ed9fc48fb9db5a514455617f2.html" target="element" class="i18n-elementtype-Driver">
+											    </a> </td>
 											</tr>
 
 									        <tr>
@@ -234,147 +279,176 @@
 
 											<tr>
 											    <td> <a href="../elements/id-a88d20c8e7b444c8abb59f220dddb7a9.html" target="element"> Regulations. Many different contradictive </a> </td>
-											    <td> <a href="../elements/id-a88d20c8e7b444c8abb59f220dddb7a9.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-a88d20c8e7b444c8abb59f220dddb7a9.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-52c61ca0ca7e4cbf8a961e0417450041.html" target="element"> Market earning business </a> </td>
-											    <td> <a href="../elements/id-52c61ca0ca7e4cbf8a961e0417450041.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-52c61ca0ca7e4cbf8a961e0417450041.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-78dccecd2a794c90bab33ed0b5905199.html" target="element"> Data sharing can originate revenue </a> </td>
-											    <td> <a href="../elements/id-78dccecd2a794c90bab33ed0b5905199.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-78dccecd2a794c90bab33ed0b5905199.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-c3c8f06c773340b7a0c2c15a33dfb9c0.html" target="element"> Data sharing may be a driver </a> </td>
-											    <td> <a href="../elements/id-c3c8f06c773340b7a0c2c15a33dfb9c0.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-c3c8f06c773340b7a0c2c15a33dfb9c0.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-1276a93e3a3e401b844c08da57059094.html" target="element"> Benefit </a> </td>
-											    <td> <a href="../elements/id-1276a93e3a3e401b844c08da57059094.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-1276a93e3a3e401b844c08da57059094.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-ef76c8009b244be79cc51d97ef7cc6f8.html" target="element"> Public image linked to data sharing </a> </td>
-											    <td> <a href="../elements/id-ef76c8009b244be79cc51d97ef7cc6f8.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-ef76c8009b244be79cc51d97ef7cc6f8.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-0a7d126ee04d42c488b7e1b5f2653d72.html" target="element"> Limited selecting data: Data modification vs passenger flow  ??? </a> </td>
-											    <td> <a href="../elements/id-0a7d126ee04d42c488b7e1b5f2653d72.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-0a7d126ee04d42c488b7e1b5f2653d72.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-e4d1d140e4d3460eb2fa007798c67b36.html" target="element"> Cost on system not only on you. Your flexibility is useful to the whole system -&gt; need to be paid </a> </td>
-											    <td> <a href="../elements/id-e4d1d140e4d3460eb2fa007798c67b36.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-e4d1d140e4d3460eb2fa007798c67b36.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-d9e2d589c80e4d74b7993edec441a401.html" target="element"> Create new busness models rewarding and pushing for collaboration &amp; data sharing for new services </a> </td>
-											    <td> <a href="../elements/id-d9e2d589c80e4d74b7993edec441a401.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-d9e2d589c80e4d74b7993edec441a401.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-3314e7016a354b15941e912e0a6aafab.html" target="element"> It has a cost /efforwise, data security) and it is propotionally higher for TSO (more data, less economic power) than public administrations and fleet operators /few data) </a> </td>
-											    <td> <a href="../elements/id-3314e7016a354b15941e912e0a6aafab.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-3314e7016a354b15941e912e0a6aafab.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-ca02ed71045f48ac8376a1a9a349274d.html" target="element"> The cost must be propotional to revenue level of each stakeholder </a> </td>
-											    <td> <a href="../elements/id-ca02ed71045f48ac8376a1a9a349274d.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-ca02ed71045f48ac8376a1a9a349274d.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-f83c758b4fd14e69b7b63252152cc713.html" target="element"> Need of long term investment on green technologies </a> </td>
-											    <td> <a href="../elements/id-f83c758b4fd14e69b7b63252152cc713.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-f83c758b4fd14e69b7b63252152cc713.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-c3e1546ad01546298dec427e64c98c26.html" target="element"> European policy about Green Deal and related strategies </a> </td>
-											    <td> <a href="../elements/id-c3e1546ad01546298dec427e64c98c26.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-c3e1546ad01546298dec427e64c98c26.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-0548ec058384420888199aa4996b337c.html" target="element"> Financial advantage </a> </td>
-											    <td> <a href="../elements/id-0548ec058384420888199aa4996b337c.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-0548ec058384420888199aa4996b337c.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-fa18e55f98b94325a9af0314403fc1e1.html" target="element"> Transparency to help people understand who is actually helping the planet and who is actually greenwashing </a> </td>
-											    <td> <a href="../elements/id-fa18e55f98b94325a9af0314403fc1e1.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-fa18e55f98b94325a9af0314403fc1e1.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-fdf7f06cfbd44528a09fde67feacf623.html" target="element"> Use of CAVs in urban mobility </a> </td>
-											    <td> <a href="../elements/id-fdf7f06cfbd44528a09fde67feacf623.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-fdf7f06cfbd44528a09fde67feacf623.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-7ffee8cf470549cd8babf29ebe9d58c9.html" target="element"> Mandatory or sypported by incentives </a> </td>
-											    <td> <a href="../elements/id-7ffee8cf470549cd8babf29ebe9d58c9.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-7ffee8cf470549cd8babf29ebe9d58c9.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-da6a7f74c33440c4a932c3403d2d24aa.html" target="element"> Need politics support </a> </td>
-											    <td> <a href="../elements/id-da6a7f74c33440c4a932c3403d2d24aa.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-da6a7f74c33440c4a932c3403d2d24aa.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-9bad1961fbdd49cd83311c2164fe2c95.html" target="element"> Requirements and benefits </a> </td>
-											    <td> <a href="../elements/id-9bad1961fbdd49cd83311c2164fe2c95.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-9bad1961fbdd49cd83311c2164fe2c95.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-01991374ba404368a8e8e94ee385e987.html" target="element"> Automated vehicles </a> </td>
-											    <td> <a href="../elements/id-01991374ba404368a8e8e94ee385e987.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-01991374ba404368a8e8e94ee385e987.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-a9761653f75541d69d6b7b073c4fde7e.html" target="element"> Acknowledgement of the data to cinfirm the actors position to give the right information to the traffic orchestrator </a> </td>
-											    <td> <a href="../elements/id-a9761653f75541d69d6b7b073c4fde7e.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-a9761653f75541d69d6b7b073c4fde7e.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-9c8bde0d9a484f82bfeb85b85ebfd408.html" target="element"> Limited standards and regulations to limit accomondation power </a> </td>
-											    <td> <a href="../elements/id-9c8bde0d9a484f82bfeb85b85ebfd408.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-9c8bde0d9a484f82bfeb85b85ebfd408.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-2ebb45c39c7149129e655e82135b5d09.html" target="element"> More and freequent extreme events due to climate change </a> </td>
-											    <td> <a href="../elements/id-2ebb45c39c7149129e655e82135b5d09.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-2ebb45c39c7149129e655e82135b5d09.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-12fe27a92f5f4d3ea19e50ef4ca4385c.html" target="element"> Reluctant to share (safe? Smart? Cross of business?) </a> </td>
-											    <td> <a href="../elements/id-12fe27a92f5f4d3ea19e50ef4ca4385c.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-12fe27a92f5f4d3ea19e50ef4ca4385c.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-db692c5c8e3a4d1d8d2404dd865b5460.html" target="element"> Partial sharing would not be effective or efficient </a> </td>
-											    <td> <a href="../elements/id-db692c5c8e3a4d1d8d2404dd865b5460.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-db692c5c8e3a4d1d8d2404dd865b5460.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-4ec86f698d9e481fbf60cfa0da6e0d5e.html" target="element"> Too much flexibility might cause negative effects on air traffic management </a> </td>
-											    <td> <a href="../elements/id-4ec86f698d9e481fbf60cfa0da6e0d5e.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-4ec86f698d9e481fbf60cfa0da6e0d5e.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-ec731cef8e9049cf901d0ecb0b8fcdb3.html" target="element"> Time saving Money saving More comfort (for travellers) </a> </td>
-											    <td> <a href="../elements/id-ec731cef8e9049cf901d0ecb0b8fcdb3.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-ec731cef8e9049cf901d0ecb0b8fcdb3.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-0d46e5f2201d41509b636903b2bf3aab.html" target="element"> Punctionality, on time, performance, quality </a> </td>
-											    <td> <a href="../elements/id-0d46e5f2201d41509b636903b2bf3aab.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-0d46e5f2201d41509b636903b2bf3aab.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-2dffd584acf14a789a6b6fa90d081fc6.html" target="element"> New services and business models we cannot imagine with more cooperation among stakeholders and transport modes </a> </td>
-											    <td> <a href="../elements/id-2dffd584acf14a789a6b6fa90d081fc6.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											    <td> <a href="../elements/id-2dffd584acf14a789a6b6fa90d081fc6.html" target="element" class="i18n-elementtype-Assessment">
+											    </a> </td>
 											</tr>
 
 
@@ -394,59 +468,68 @@
 								<tbody>
 																	<tr>
 																		<td> <a href="../elements/id-9f0258e92b934fe9a8825280151bf4c9.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-9f0258e92b934fe9a8825280151bf4c9.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-9f0258e92b934fe9a8825280151bf4c9.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-4c5a2cfc85e344f6a12a43e394cb1c9f.html" target="element"> Transport Service Provider </a> </td>
 																		<td> <a href="../elements/id-8810a9364eea4d63b301bc5b6fa62a17.html" target="element"> oSustainability </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-35ca800535754b64bf702402c6d96773.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-35ca800535754b64bf702402c6d96773.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-35ca800535754b64bf702402c6d96773.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-334170d300434a5782f39eab098019d7.html" target="element"> oCosts </a> </td>
 																		<td> <a href="../elements/id-7cc7018a8a7c440983c9d097c50e9e0d.html" target="element"> Low flexibility  </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-157f1454317c41a486a5779afc83ec1b.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-157f1454317c41a486a5779afc83ec1b.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-157f1454317c41a486a5779afc83ec1b.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-60b5f362984d424b957ccc24119167f9.html" target="element"> oPredictable transport chains </a> </td>
 																		<td> <a href="../elements/id-ecfcc076f00345049c6f1f88bccbc2da.html" target="element"> Depend on information from fleet operator </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-2dbd31bfd4e54c938233d5a730a121c7.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-2dbd31bfd4e54c938233d5a730a121c7.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-2dbd31bfd4e54c938233d5a730a121c7.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-60b5f362984d424b957ccc24119167f9.html" target="element"> oPredictable transport chains </a> </td>
 																		<td> <a href="../elements/id-af65e30e0b7844d796ba6fb73d64d4c9.html" target="element"> oResilient transport chains </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-d214a84201b84193b8549c787bb90372.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-d214a84201b84193b8549c787bb90372.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-d214a84201b84193b8549c787bb90372.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-2df92a01daa040c1be435a4c6c2d7f36.html" target="element"> oEfficient transport chains </a> </td>
 																		<td> <a href="../elements/id-a23ae759763f4675911c405be93437a8.html" target="element"> oCustomer satisfaction </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-e049ddff2c5e4d778cc2677cd924a49d.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-e049ddff2c5e4d778cc2677cd924a49d.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-e049ddff2c5e4d778cc2677cd924a49d.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-2df92a01daa040c1be435a4c6c2d7f36.html" target="element"> oEfficient transport chains </a> </td>
 																		<td> <a href="../elements/id-af65e30e0b7844d796ba6fb73d64d4c9.html" target="element"> oResilient transport chains </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-9caabadf3f184a9cb2bf10d44ab413cd.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-9caabadf3f184a9cb2bf10d44ab413cd.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-9caabadf3f184a9cb2bf10d44ab413cd.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-0f80e6bb641040438e190fa5352fafc0.html" target="element"> oRevenue </a> </td>
 																		<td> <a href="../elements/id-2df92a01daa040c1be435a4c6c2d7f36.html" target="element"> oEfficient transport chains </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-9d901f1697f6462daa849ce3b5a9e312.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-9d901f1697f6462daa849ce3b5a9e312.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-9d901f1697f6462daa849ce3b5a9e312.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-0f80e6bb641040438e190fa5352fafc0.html" target="element"> oRevenue </a> </td>
 																		<td> <a href="../elements/id-00c1750fe0c6463aba0af4c6e0e7f430.html" target="element"> Business models limit flexibility in case of network problems </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-d2a71983af64422d9716c37e7bd4a96f.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-d2a71983af64422d9716c37e7bd4a96f.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-d2a71983af64422d9716c37e7bd4a96f.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-0f80e6bb641040438e190fa5352fafc0.html" target="element"> oRevenue </a> </td>
 																		<td> <a href="../elements/id-7af4c372cba84b0ba4614f654a65d8ac.html" target="element"> Business models do not reward collaboration </a> </td>
 																	</tr>
@@ -455,79 +538,91 @@
 											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelNote -->
 																	<tr>
 																		<td> <a href="../elements/id-f3917fae037b45019584171fe7cbc6d6.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-f3917fae037b45019584171fe7cbc6d6.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-f3917fae037b45019584171fe7cbc6d6.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-af65e30e0b7844d796ba6fb73d64d4c9.html" target="element"> oResilient transport chains </a> </td>
 																		<td> <a href="../elements/id-7cc7018a8a7c440983c9d097c50e9e0d.html" target="element"> Low flexibility  </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-b804d1257e8e4ec8882106ec54cf8d2f.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-b804d1257e8e4ec8882106ec54cf8d2f.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-b804d1257e8e4ec8882106ec54cf8d2f.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-c0b6e2461a1a40f19a7e674e43ce97b4.html" target="element"> Insufficient adaption to current and upcoming traffic situations </a> </td>
 																		<td> <a href="../elements/id-af65e30e0b7844d796ba6fb73d64d4c9.html" target="element"> oResilient transport chains </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-7c7277eeddef4f70b9310f2b424ec7cb.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-7c7277eeddef4f70b9310f2b424ec7cb.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-7c7277eeddef4f70b9310f2b424ec7cb.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-733d673a125149fd964a0a25d53a2122.html" target="element"> oGreen transport </a> </td>
 																		<td> <a href="../elements/id-b603962edf384873a6ecc12c05550fa0.html" target="element"> Green is important for public image </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-b17478531b5042f4a0857508d56e0c55.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-b17478531b5042f4a0857508d56e0c55.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-b17478531b5042f4a0857508d56e0c55.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-8810a9364eea4d63b301bc5b6fa62a17.html" target="element"> oSustainability </a> </td>
 																		<td> <a href="../elements/id-733d673a125149fd964a0a25d53a2122.html" target="element"> oGreen transport </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-dd27561823ae484c89671ceacab6cdce.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-dd27561823ae484c89671ceacab6cdce.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-dd27561823ae484c89671ceacab6cdce.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-8810a9364eea4d63b301bc5b6fa62a17.html" target="element"> oSustainability </a> </td>
 																		<td> <a href="../elements/id-334170d300434a5782f39eab098019d7.html" target="element"> oCosts </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-fdbc993d07c2468ab7e2fddb30ebd552.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-fdbc993d07c2468ab7e2fddb30ebd552.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-fdbc993d07c2468ab7e2fddb30ebd552.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-8810a9364eea4d63b301bc5b6fa62a17.html" target="element"> oSustainability </a> </td>
 																		<td> <a href="../elements/id-0f80e6bb641040438e190fa5352fafc0.html" target="element"> oRevenue </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-59efa8b9654b48b3b82fd6fd5b9f5c38.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-59efa8b9654b48b3b82fd6fd5b9f5c38.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-59efa8b9654b48b3b82fd6fd5b9f5c38.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-8810a9364eea4d63b301bc5b6fa62a17.html" target="element"> oSustainability </a> </td>
 																		<td> <a href="../elements/id-2df92a01daa040c1be435a4c6c2d7f36.html" target="element"> oEfficient transport chains </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-ca8b3212eb254cb7b6581f12f4b4cf73.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-ca8b3212eb254cb7b6581f12f4b4cf73.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-ca8b3212eb254cb7b6581f12f4b4cf73.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-a23ae759763f4675911c405be93437a8.html" target="element"> oCustomer satisfaction </a> </td>
 																		<td> <a href="../elements/id-4c5a2cfc85e344f6a12a43e394cb1c9f.html" target="element"> Transport Service Provider </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-ceed15d789a94633a8e83692d27a65f0.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-ceed15d789a94633a8e83692d27a65f0.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-ceed15d789a94633a8e83692d27a65f0.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-a23ae759763f4675911c405be93437a8.html" target="element"> oCustomer satisfaction </a> </td>
 																		<td> <a href="../elements/id-60b5f362984d424b957ccc24119167f9.html" target="element"> oPredictable transport chains </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-d8d538af07b949b8a59b7ea0f185484b.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-d8d538af07b949b8a59b7ea0f185484b.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-d8d538af07b949b8a59b7ea0f185484b.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-a23ae759763f4675911c405be93437a8.html" target="element"> oCustomer satisfaction </a> </td>
 																		<td> <a href="../elements/id-e004d51ed9fc48fb9db5a514455617f2.html" target="element"> oSafety for people and goods </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-a381ac6cfb274c5fa0288b46fd904380.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-a381ac6cfb274c5fa0288b46fd904380.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-a381ac6cfb274c5fa0288b46fd904380.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-51d33d72b9ba4cbdb5c3024ee2a31137.html" target="element"> No profit linked to data sharing </a> </td>
 																		<td> <a href="../elements/id-0f80e6bb641040438e190fa5352fafc0.html" target="element"> oRevenue </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-29647e4583054de1b5b9fed0881dd3ef.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-29647e4583054de1b5b9fed0881dd3ef.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-29647e4583054de1b5b9fed0881dd3ef.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-fea21e980fbb40b9b23e78ae0857177a.html" target="element"> Limited data sharing with traffic orchestrator </a> </td>
 																		<td> <a href="../elements/id-af65e30e0b7844d796ba6fb73d64d4c9.html" target="element"> oResilient transport chains </a> </td>
 																	</tr>

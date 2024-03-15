@@ -1,14 +1,13 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	<title>Coordination with Other Networks and Modes</title>
 
-	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
-	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
 	<!-- BOOTSTRAP -->
-	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
-	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
 	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
 	<!-- REPORT SPECIFIC -->
 	<link type="text/css" rel="stylesheet" href="../../css/model.css">
@@ -75,6 +74,8 @@
                     <!-- Properties -->
                     <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
 
+                    <!-- Analysis -->
+
 						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
 						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
                     <!-- Model, Query Tab -->
@@ -97,6 +98,32 @@
 							</tbody>
 						</table>
 					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
 						<div role="tabpanel" class="tab-pane" id="elements">
 							<table class="table table-striped table-hover table-condensed">
 								<thead>
@@ -108,12 +135,14 @@
 								<tbody>
 											<tr>
 											    <td> <a href="../elements/id-2a0ec8e9df024ce1b5deeecee3733be3.html" target="element"> Traffic Orchestrator </a> </td>
-											    <td> <a href="../elements/id-2a0ec8e9df024ce1b5deeecee3733be3.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											    <td> <a href="../elements/id-2a0ec8e9df024ce1b5deeecee3733be3.html" target="element" class="i18n-elementtype-BusinessRole">
+											    </a> </td>
 											</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-014e3c82971a4a44b5b2f8d8f4ffe486.html" target="element"> Coordination with Transport Actors </a> </td>
-													    <td> <a href="../elements/id-014e3c82971a4a44b5b2f8d8f4ffe486.html" target="element" class="i18n-elementtype-BusinessService"> </a> </td>
+													    <td> <a href="../elements/id-014e3c82971a4a44b5b2f8d8f4ffe486.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
 													</tr>
 
 															<tr>
@@ -125,7 +154,8 @@
 													
 													<tr>
 													    <td> <a href="../elements/id-7215b8f64a7f4622b3c86564357b76e7.html" target="element"> Demand Capacity Balancing </a> </td>
-													    <td> <a href="../elements/id-7215b8f64a7f4622b3c86564357b76e7.html" target="element" class="i18n-elementtype-BusinessService"> </a> </td>
+													    <td> <a href="../elements/id-7215b8f64a7f4622b3c86564357b76e7.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
 													</tr>
 
 															<tr>
@@ -137,82 +167,97 @@
 													
 													<tr>
 													    <td> <a href="../elements/id-261da206fc934ca2a295a36f742f7329.html" target="element"> Coordination with Other Networks and Modes </a> </td>
-													    <td> <a href="../elements/id-261da206fc934ca2a295a36f742f7329.html" target="element" class="i18n-elementtype-BusinessService"> </a> </td>
+													    <td> <a href="../elements/id-261da206fc934ca2a295a36f742f7329.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
 													</tr>
 
 															<tr>
 															    <td> <a href="../elements/id-fbbe59f692104cd7b5c5ece520b4d294.html" target="element"> Request and Offer Traffic Transfer </a> </td>
-															    <td> <a href="../elements/id-fbbe59f692104cd7b5c5ece520b4d294.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+															    <td> <a href="../elements/id-fbbe59f692104cd7b5c5ece520b4d294.html" target="element" class="i18n-elementtype-BusinessProcess">
+															    </a> </td>
 															</tr>
 
 															<tr>
 															    <td> <a href="../elements/id-846c13cc7b1b47d088f0903490bbb53d.html" target="element"> Handle Forced Handover </a> </td>
-															    <td> <a href="../elements/id-846c13cc7b1b47d088f0903490bbb53d.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+															    <td> <a href="../elements/id-846c13cc7b1b47d088f0903490bbb53d.html" target="element" class="i18n-elementtype-BusinessProcess">
+															    </a> </td>
 															</tr>
 
 															<tr>
 															    <td> <a href="../elements/id-662b9dbab6104ccf95238ef35df4bbfe.html" target="element"> Handle Regular Handover </a> </td>
-															    <td> <a href="../elements/id-662b9dbab6104ccf95238ef35df4bbfe.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+															    <td> <a href="../elements/id-662b9dbab6104ccf95238ef35df4bbfe.html" target="element" class="i18n-elementtype-BusinessProcess">
+															    </a> </td>
 															</tr>
 
 													
 											
 											<tr>
 											    <td> <a href="../elements/id-61a0a1f6f72e4df9a0d49caadde09529.html" target="element"> Network Information </a> </td>
-											    <td> <a href="../elements/id-61a0a1f6f72e4df9a0d49caadde09529.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+											    <td> <a href="../elements/id-61a0a1f6f72e4df9a0d49caadde09529.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-c634000ef81e4a398c2bd54024792ff4.html" target="element"> Traffic Situation </a> </td>
-											    <td> <a href="../elements/id-c634000ef81e4a398c2bd54024792ff4.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+											    <td> <a href="../elements/id-c634000ef81e4a398c2bd54024792ff4.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
 											</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-2046acd896ce49c4999d123e24df4ad5.html" target="element"> Traffic Flow </a> </td>
-													    <td> <a href="../elements/id-2046acd896ce49c4999d123e24df4ad5.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+													    <td> <a href="../elements/id-2046acd896ce49c4999d123e24df4ad5.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
 													</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-4550a0ba1fde46ff919d665d6b6c1abb.html" target="element"> Local Capacity Usage </a> </td>
-													    <td> <a href="../elements/id-4550a0ba1fde46ff919d665d6b6c1abb.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+													    <td> <a href="../elements/id-4550a0ba1fde46ff919d665d6b6c1abb.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
 													</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-35b85438add943fbaea85b8feadf46ab.html" target="element"> Neighbouring Network Capacity </a> </td>
-													    <td> <a href="../elements/id-35b85438add943fbaea85b8feadf46ab.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+													    <td> <a href="../elements/id-35b85438add943fbaea85b8feadf46ab.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
 													</tr>
 
 											
 											<tr>
 											    <td> <a href="../elements/id-e8ba7d67cd5040ebbd565903f55c2612.html" target="element"> Action Plan </a> </td>
-											    <td> <a href="../elements/id-e8ba7d67cd5040ebbd565903f55c2612.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+											    <td> <a href="../elements/id-e8ba7d67cd5040ebbd565903f55c2612.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
 											</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-625131e0409043d4b3a365daf2a0c6a2.html" target="element"> Traffic Transfer Needed </a> </td>
-													    <td> <a href="../elements/id-625131e0409043d4b3a365daf2a0c6a2.html" target="element" class="i18n-elementtype-BusinessEvent"> </a> </td>
+													    <td> <a href="../elements/id-625131e0409043d4b3a365daf2a0c6a2.html" target="element" class="i18n-elementtype-BusinessEvent">
+													    </a> </td>
 													</tr>
 
 											
 											<tr>
 											    <td> <a href="../elements/id-3f050852d98e471080811a151e61e8da.html" target="element"> Traffic Entry or Exit </a> </td>
-											    <td> <a href="../elements/id-3f050852d98e471080811a151e61e8da.html" target="element" class="i18n-elementtype-BusinessEvent"> </a> </td>
+											    <td> <a href="../elements/id-3f050852d98e471080811a151e61e8da.html" target="element" class="i18n-elementtype-BusinessEvent">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-6603ad0367a146cea85c36e74d7d9b30.html" target="element"> Traffic Orchestrator in Other Network </a> </td>
-											    <td> <a href="../elements/id-6603ad0367a146cea85c36e74d7d9b30.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											    <td> <a href="../elements/id-6603ad0367a146cea85c36e74d7d9b30.html" target="element" class="i18n-elementtype-BusinessRole">
+											    </a> </td>
 											</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-261da206fc934ca2a295a36f742f7329.html" target="element"> Coordination with Other Networks and Modes </a> </td>
-													    <td> <a href="../elements/id-261da206fc934ca2a295a36f742f7329.html" target="element" class="i18n-elementtype-BusinessService"> </a> </td>
+													    <td> <a href="../elements/id-261da206fc934ca2a295a36f742f7329.html" target="element" class="i18n-elementtype-BusinessService">
+													    </a> </td>
 													</tr>
 
 											
 											<tr>
 											    <td> <a href="../elements/id-c11660e2e0ad4d6ba5c9825cb6d62be6.html" target="element"> Transport Operations </a> </td>
-											    <td> <a href="../elements/id-c11660e2e0ad4d6ba5c9825cb6d62be6.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+											    <td> <a href="../elements/id-c11660e2e0ad4d6ba5c9825cb6d62be6.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
 											</tr>
 
 
@@ -232,19 +277,22 @@
 								<tbody>
 																	<tr>
 																		<td> <a href="../elements/id-fff42c686685441791fd9ce0e4cb5727.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-fff42c686685441791fd9ce0e4cb5727.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/id-fff42c686685441791fd9ce0e4cb5727.html" target="element" class="i18n-elementtype-AssignmentRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-2a0ec8e9df024ce1b5deeecee3733be3.html" target="element"> Traffic Orchestrator </a> </td>
 																		<td> <a href="../elements/id-014e3c82971a4a44b5b2f8d8f4ffe486.html" target="element"> Coordination with Transport Actors </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-031f06d1f3434328a10232558d9dfa4b.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-031f06d1f3434328a10232558d9dfa4b.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/id-031f06d1f3434328a10232558d9dfa4b.html" target="element" class="i18n-elementtype-AssignmentRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-2a0ec8e9df024ce1b5deeecee3733be3.html" target="element"> Traffic Orchestrator </a> </td>
 																		<td> <a href="../elements/id-7215b8f64a7f4622b3c86564357b76e7.html" target="element"> Demand Capacity Balancing </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-9888504645e646109d21c1f02fa08e32.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-9888504645e646109d21c1f02fa08e32.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/id-9888504645e646109d21c1f02fa08e32.html" target="element" class="i18n-elementtype-AssignmentRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-2a0ec8e9df024ce1b5deeecee3733be3.html" target="element"> Traffic Orchestrator </a> </td>
 																		<td> <a href="../elements/id-261da206fc934ca2a295a36f742f7329.html" target="element"> Coordination with Other Networks and Modes </a> </td>
 																	</tr>
@@ -255,51 +303,59 @@
 													
 																			<tr>
 																				<td> <a href="../elements/id-724179f204d641548de5d6b203433f46.html" target="element">  </a> </td>
-																				<td> <a href="../elements/id-724179f204d641548de5d6b203433f46.html" target="element" class="i18n-elementtype-AccessRelationship"></a> </td>
+																				<td> <a href="../elements/id-724179f204d641548de5d6b203433f46.html" target="element" class="i18n-elementtype-AccessRelationship">
+																				</a> </td>
 																				<td> <a href="../elements/id-261da206fc934ca2a295a36f742f7329.html" target="element"> Coordination with Other Networks and Modes </a> </td>
 																				<td> <a href="../elements/id-61a0a1f6f72e4df9a0d49caadde09529.html" target="element"> Network Information </a> </td>
 																			</tr>
 																			<tr>
 																				<td> <a href="../elements/id-1b06bf5d3dd5436c8ab85800d3ff5586.html" target="element">  </a> </td>
-																				<td> <a href="../elements/id-1b06bf5d3dd5436c8ab85800d3ff5586.html" target="element" class="i18n-elementtype-AccessRelationship"></a> </td>
+																				<td> <a href="../elements/id-1b06bf5d3dd5436c8ab85800d3ff5586.html" target="element" class="i18n-elementtype-AccessRelationship">
+																				</a> </td>
 																				<td> <a href="../elements/id-261da206fc934ca2a295a36f742f7329.html" target="element"> Coordination with Other Networks and Modes </a> </td>
 																				<td> <a href="../elements/id-c634000ef81e4a398c2bd54024792ff4.html" target="element"> Traffic Situation </a> </td>
 																			</tr>
 																			<tr>
 																				<td> <a href="../elements/id-8a8ad4e9329c44f4ad784d05f1b1a515.html" target="element">  </a> </td>
-																				<td> <a href="../elements/id-8a8ad4e9329c44f4ad784d05f1b1a515.html" target="element" class="i18n-elementtype-AccessRelationship"></a> </td>
+																				<td> <a href="../elements/id-8a8ad4e9329c44f4ad784d05f1b1a515.html" target="element" class="i18n-elementtype-AccessRelationship">
+																				</a> </td>
 																				<td> <a href="../elements/id-261da206fc934ca2a295a36f742f7329.html" target="element"> Coordination with Other Networks and Modes </a> </td>
 																				<td> <a href="../elements/id-e8ba7d67cd5040ebbd565903f55c2612.html" target="element"> Action Plan </a> </td>
 																			</tr>
 																			<tr>
 																				<td> <a href="../elements/id-7a451aee794f43eaabfae6c362d2f3da.html" target="element">  </a> </td>
-																				<td> <a href="../elements/id-7a451aee794f43eaabfae6c362d2f3da.html" target="element" class="i18n-elementtype-AccessRelationship"></a> </td>
+																				<td> <a href="../elements/id-7a451aee794f43eaabfae6c362d2f3da.html" target="element" class="i18n-elementtype-AccessRelationship">
+																				</a> </td>
 																				<td> <a href="../elements/id-261da206fc934ca2a295a36f742f7329.html" target="element"> Coordination with Other Networks and Modes </a> </td>
 																				<td> <a href="../elements/id-c11660e2e0ad4d6ba5c9825cb6d62be6.html" target="element"> Transport Operations </a> </td>
 																			</tr>
 
 																					<tr>
 																						<td> <a href="../elements/id-2c2d0018026147fab9b05a1a62a03952.html" target="element">  </a> </td>
-																						<td> <a href="../elements/id-2c2d0018026147fab9b05a1a62a03952.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																						<td> <a href="../elements/id-2c2d0018026147fab9b05a1a62a03952.html" target="element" class="i18n-elementtype-FlowRelationship">
+																						</a> </td>
 																						<td> <a href="../elements/id-fbbe59f692104cd7b5c5ece520b4d294.html" target="element"> Request and Offer Traffic Transfer </a> </td>
 																						<td> <a href="../elements/id-846c13cc7b1b47d088f0903490bbb53d.html" target="element"> Handle Forced Handover </a> </td>
 																					</tr>
 																					<tr>
 																						<td> <a href="../elements/id-12d9df36e0074fb7be8ef942e8e6ba67.html" target="element">  </a> </td>
-																						<td> <a href="../elements/id-12d9df36e0074fb7be8ef942e8e6ba67.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																						<td> <a href="../elements/id-12d9df36e0074fb7be8ef942e8e6ba67.html" target="element" class="i18n-elementtype-FlowRelationship">
+																						</a> </td>
 																						<td> <a href="../elements/id-fbbe59f692104cd7b5c5ece520b4d294.html" target="element"> Request and Offer Traffic Transfer </a> </td>
 																						<td> <a href="../elements/id-261da206fc934ca2a295a36f742f7329.html" target="element"> Coordination with Other Networks and Modes </a> </td>
 																					</tr>
 
 																					<tr>
 																						<td> <a href="../elements/id-860f8755a7ae4741a7b8f78351b362de.html" target="element">  </a> </td>
-																						<td> <a href="../elements/id-860f8755a7ae4741a7b8f78351b362de.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																						<td> <a href="../elements/id-860f8755a7ae4741a7b8f78351b362de.html" target="element" class="i18n-elementtype-FlowRelationship">
+																						</a> </td>
 																						<td> <a href="../elements/id-846c13cc7b1b47d088f0903490bbb53d.html" target="element"> Handle Forced Handover </a> </td>
 																						<td> <a href="../elements/id-7215b8f64a7f4622b3c86564357b76e7.html" target="element"> Demand Capacity Balancing </a> </td>
 																					</tr>
 																					<tr>
 																						<td> <a href="../elements/id-34e502f981b14027bc17260850a6a98c.html" target="element"> inform about changes for transport </a> </td>
-																						<td> <a href="../elements/id-34e502f981b14027bc17260850a6a98c.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																						<td> <a href="../elements/id-34e502f981b14027bc17260850a6a98c.html" target="element" class="i18n-elementtype-FlowRelationship">
+																						</a> </td>
 																						<td> <a href="../elements/id-846c13cc7b1b47d088f0903490bbb53d.html" target="element"> Handle Forced Handover </a> </td>
 																						<td> <a href="../elements/id-014e3c82971a4a44b5b2f8d8f4ffe486.html" target="element"> Coordination with Transport Actors </a> </td>
 																					</tr>
@@ -308,19 +364,22 @@
 											
 																	<tr>
 																		<td> <a href="../elements/id-350eca28977743c6a3f672984aeb0415.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-350eca28977743c6a3f672984aeb0415.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-350eca28977743c6a3f672984aeb0415.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-c634000ef81e4a398c2bd54024792ff4.html" target="element"> Traffic Situation </a> </td>
 																		<td> <a href="../elements/id-2046acd896ce49c4999d123e24df4ad5.html" target="element"> Traffic Flow </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-da60738601fe4f48b8756cee370c30d0.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-da60738601fe4f48b8756cee370c30d0.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-da60738601fe4f48b8756cee370c30d0.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-c634000ef81e4a398c2bd54024792ff4.html" target="element"> Traffic Situation </a> </td>
 																		<td> <a href="../elements/id-4550a0ba1fde46ff919d665d6b6c1abb.html" target="element"> Local Capacity Usage </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-55a4f7b899d0422db43a9960ab3065fe.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-55a4f7b899d0422db43a9960ab3065fe.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-55a4f7b899d0422db43a9960ab3065fe.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-c634000ef81e4a398c2bd54024792ff4.html" target="element"> Traffic Situation </a> </td>
 																		<td> <a href="../elements/id-35b85438add943fbaea85b8feadf46ab.html" target="element"> Neighbouring Network Capacity </a> </td>
 																	</tr>
@@ -328,7 +387,8 @@
 											
 																			<tr>
 																				<td> <a href="../elements/id-6b74f8e8f4a84b6c879a5f04d377ad39.html" target="element">  </a> </td>
-																				<td> <a href="../elements/id-6b74f8e8f4a84b6c879a5f04d377ad39.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																				<td> <a href="../elements/id-6b74f8e8f4a84b6c879a5f04d377ad39.html" target="element" class="i18n-elementtype-FlowRelationship">
+																				</a> </td>
 																				<td> <a href="../elements/id-625131e0409043d4b3a365daf2a0c6a2.html" target="element"> Traffic Transfer Needed </a> </td>
 																				<td> <a href="../elements/id-fbbe59f692104cd7b5c5ece520b4d294.html" target="element"> Request and Offer Traffic Transfer </a> </td>
 																			</tr>
@@ -336,14 +396,16 @@
 											
 																	<tr>
 																		<td> <a href="../elements/id-06f6b3aff1c645aa9e58e0b323d3af3a.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-06f6b3aff1c645aa9e58e0b323d3af3a.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																		<td> <a href="../elements/id-06f6b3aff1c645aa9e58e0b323d3af3a.html" target="element" class="i18n-elementtype-FlowRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-3f050852d98e471080811a151e61e8da.html" target="element"> Traffic Entry or Exit </a> </td>
 																		<td> <a href="../elements/id-662b9dbab6104ccf95238ef35df4bbfe.html" target="element"> Handle Regular Handover </a> </td>
 																	</tr>
 
 																			<tr>
 																				<td> <a href="../elements/id-7679e448792f4b8492d8077ff8d56501.html" target="element">  </a> </td>
-																				<td> <a href="../elements/id-7679e448792f4b8492d8077ff8d56501.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																				<td> <a href="../elements/id-7679e448792f4b8492d8077ff8d56501.html" target="element" class="i18n-elementtype-FlowRelationship">
+																				</a> </td>
 																				<td> <a href="../elements/id-261da206fc934ca2a295a36f742f7329.html" target="element"> Coordination with Other Networks and Modes </a> </td>
 																				<td> <a href="../elements/id-fbbe59f692104cd7b5c5ece520b4d294.html" target="element"> Request and Offer Traffic Transfer </a> </td>
 																			</tr>

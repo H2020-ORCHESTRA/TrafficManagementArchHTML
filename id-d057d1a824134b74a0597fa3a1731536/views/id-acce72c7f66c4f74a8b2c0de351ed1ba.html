@@ -1,14 +1,13 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	<title>Transport stakeholder examples</title>
 
-	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
-	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
 	<!-- BOOTSTRAP -->
-	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
-	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
 	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
 	<!-- REPORT SPECIFIC -->
 	<link type="text/css" rel="stylesheet" href="../../css/model.css">
@@ -68,6 +67,8 @@
                     <!-- Properties -->
                     <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
 
+                    <!-- Analysis -->
+
 						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
 						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
                     <!-- Model, Query Tab -->
@@ -90,6 +91,32 @@
 							</tbody>
 						</table>
 					</div>
+					<div role="tabpanel" class="tab-pane" id="analysis">
+						<table class="table table-striped table-hover table-condensed" id="used-in-views">
+							<thead>
+								<tr><th colspan="2" class="i18n-used-in-views" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-viewpoint"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+						<table class="table table-striped table-hover table-condensed" id="model-relations">
+							<thead>
+								<tr><th colspan="4" class="i18n-model-relations" /></tr>
+								<tr>
+									<th class="i18n-name"></th>
+									<th class="i18n-type"></th>
+									<th class="i18n-source"></th>
+									<th class="i18n-target"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
 						<div role="tabpanel" class="tab-pane" id="elements">
 							<table class="table table-striped table-hover table-condensed">
 								<thead>
@@ -101,112 +128,134 @@
 								<tbody>
 											<tr>
 											    <td> <a href="../elements/id-bfd87d2bdeeb435ebe6db5a7cb10821a.html" target="element"> Transport User </a> </td>
-											    <td> <a href="../elements/id-bfd87d2bdeeb435ebe6db5a7cb10821a.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-bfd87d2bdeeb435ebe6db5a7cb10821a.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-4c5a2cfc85e344f6a12a43e394cb1c9f.html" target="element"> Transport Service Provider </a> </td>
-											    <td> <a href="../elements/id-4c5a2cfc85e344f6a12a43e394cb1c9f.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-4c5a2cfc85e344f6a12a43e394cb1c9f.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-f134f1ae3d2c46d19633fd19315737f6.html" target="element"> Fleet Operator </a> </td>
-											    <td> <a href="../elements/id-f134f1ae3d2c46d19633fd19315737f6.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-f134f1ae3d2c46d19633fd19315737f6.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-0e326829a58641dc907198c32f249ed6.html" target="element"> Network User </a> </td>
-											    <td> <a href="../elements/id-0e326829a58641dc907198c32f249ed6.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-0e326829a58641dc907198c32f249ed6.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-839612f512464ae0a6dc6efc38f07c8c.html" target="element"> Cargo owner </a> </td>
-											    <td> <a href="../elements/id-839612f512464ae0a6dc6efc38f07c8c.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-839612f512464ae0a6dc6efc38f07c8c.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-0a8dc4581bf24103b90a469473677ef0.html" target="element"> Logistic service provider </a> </td>
-											    <td> <a href="../elements/id-0a8dc4581bf24103b90a469473677ef0.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-0a8dc4581bf24103b90a469473677ef0.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-a83f392c806644d591319dd78d11dbb2.html" target="element"> Mobility service provider </a> </td>
-											    <td> <a href="../elements/id-a83f392c806644d591319dd78d11dbb2.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-a83f392c806644d591319dd78d11dbb2.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-1783a95d64e3434098d4f619e314b902.html" target="element"> MaaS operator </a> </td>
-											    <td> <a href="../elements/id-1783a95d64e3434098d4f619e314b902.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-1783a95d64e3434098d4f619e314b902.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-6e770ea8fdc14b579019462c594ce729.html" target="element"> Driver/Captain </a> </td>
-											    <td> <a href="../elements/id-6e770ea8fdc14b579019462c594ce729.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-6e770ea8fdc14b579019462c594ce729.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-69c40ac547864e77862a43037419a05d.html" target="element"> Goods forwarders </a> </td>
-											    <td> <a href="../elements/id-69c40ac547864e77862a43037419a05d.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-69c40ac547864e77862a43037419a05d.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-9e951e70a0ab414e92d6438383adfa62.html" target="element"> Forwarder </a> </td>
-											    <td> <a href="../elements/id-9e951e70a0ab414e92d6438383adfa62.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-9e951e70a0ab414e92d6438383adfa62.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-d83d54b7eb2b4d20b895eb2044f499ab.html" target="element"> Autonomous vessels </a> </td>
-											    <td> <a href="../elements/id-d83d54b7eb2b4d20b895eb2044f499ab.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-d83d54b7eb2b4d20b895eb2044f499ab.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-fa123e06126b42b0ac02f3111eb29b5d.html" target="element"> CAV/vessel/vehicle </a> </td>
-											    <td> <a href="../elements/id-fa123e06126b42b0ac02f3111eb29b5d.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-fa123e06126b42b0ac02f3111eb29b5d.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-228b2ca980774a2786e9ee53e869d877.html" target="element"> Emergency sevices </a> </td>
-											    <td> <a href="../elements/id-228b2ca980774a2786e9ee53e869d877.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-228b2ca980774a2786e9ee53e869d877.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-7a4e223910464154af7fc7ae81d2755e.html" target="element"> Maintenance operators </a> </td>
-											    <td> <a href="../elements/id-7a4e223910464154af7fc7ae81d2755e.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-7a4e223910464154af7fc7ae81d2755e.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-e08bdb45a6614ba9b2f2a4bd13d4bb8c.html" target="element"> Shippers </a> </td>
-											    <td> <a href="../elements/id-e08bdb45a6614ba9b2f2a4bd13d4bb8c.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-e08bdb45a6614ba9b2f2a4bd13d4bb8c.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-37d3fc2a8a8e483ea8ac27b0fd86bd89.html" target="element"> Local transportation service providers </a> </td>
-											    <td> <a href="../elements/id-37d3fc2a8a8e483ea8ac27b0fd86bd89.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-37d3fc2a8a8e483ea8ac27b0fd86bd89.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-3d34889e8e19450b81b159e86b1dedf7.html" target="element"> Traveller </a> </td>
-											    <td> <a href="../elements/id-3d34889e8e19450b81b159e86b1dedf7.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-3d34889e8e19450b81b159e86b1dedf7.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-e64c1491ef00495783a6132e5a06c6e0.html" target="element"> Utility Fleet Operator </a> </td>
-											    <td> <a href="../elements/id-e64c1491ef00495783a6132e5a06c6e0.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-e64c1491ef00495783a6132e5a06c6e0.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-b92b92fffc124149a43b6ecc5f443bf7.html" target="element"> Passengers </a> </td>
-											    <td> <a href="../elements/id-b92b92fffc124149a43b6ecc5f443bf7.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-b92b92fffc124149a43b6ecc5f443bf7.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-e487bc0a5a9440cbb6e8e6cca6a1d14c.html" target="element"> Airport Passenger </a> </td>
-											    <td> <a href="../elements/id-e487bc0a5a9440cbb6e8e6cca6a1d14c.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-e487bc0a5a9440cbb6e8e6cca6a1d14c.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-6552a7ea919d4f9ebd4b28a956d75102.html" target="element"> Pedestrian </a> </td>
-											    <td> <a href="../elements/id-6552a7ea919d4f9ebd4b28a956d75102.html" target="element" class="i18n-elementtype-Stakeholder"> </a> </td>
+											    <td> <a href="../elements/id-6552a7ea919d4f9ebd4b28a956d75102.html" target="element" class="i18n-elementtype-Stakeholder">
+											    </a> </td>
 											</tr>
 
 
@@ -226,126 +275,144 @@
 								<tbody>
 																	<tr>
 																		<td> <a href="../elements/id-7f534642238448389066efb746c6b459.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-7f534642238448389066efb746c6b459.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-7f534642238448389066efb746c6b459.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-839612f512464ae0a6dc6efc38f07c8c.html" target="element"> Cargo owner </a> </td>
 																		<td> <a href="../elements/id-bfd87d2bdeeb435ebe6db5a7cb10821a.html" target="element"> Transport User </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-d36f3eff65b84d239e2f83578f2af628.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-d36f3eff65b84d239e2f83578f2af628.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-d36f3eff65b84d239e2f83578f2af628.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-0a8dc4581bf24103b90a469473677ef0.html" target="element"> Logistic service provider </a> </td>
 																		<td> <a href="../elements/id-4c5a2cfc85e344f6a12a43e394cb1c9f.html" target="element"> Transport Service Provider </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-80621dd1cc0241338abcc6504c4ba4cf.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-80621dd1cc0241338abcc6504c4ba4cf.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-80621dd1cc0241338abcc6504c4ba4cf.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-a83f392c806644d591319dd78d11dbb2.html" target="element"> Mobility service provider </a> </td>
 																		<td> <a href="../elements/id-4c5a2cfc85e344f6a12a43e394cb1c9f.html" target="element"> Transport Service Provider </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-4eab2dc71b434d7b8004293ffc90000c.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-4eab2dc71b434d7b8004293ffc90000c.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-4eab2dc71b434d7b8004293ffc90000c.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-1783a95d64e3434098d4f619e314b902.html" target="element"> MaaS operator </a> </td>
 																		<td> <a href="../elements/id-4c5a2cfc85e344f6a12a43e394cb1c9f.html" target="element"> Transport Service Provider </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-eb8aead959644e3fa272d811423d7e21.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-eb8aead959644e3fa272d811423d7e21.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-eb8aead959644e3fa272d811423d7e21.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-6e770ea8fdc14b579019462c594ce729.html" target="element"> Driver/Captain </a> </td>
 																		<td> <a href="../elements/id-0e326829a58641dc907198c32f249ed6.html" target="element"> Network User </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-2996089347cb4b1d9fda2e822c740033.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-2996089347cb4b1d9fda2e822c740033.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-2996089347cb4b1d9fda2e822c740033.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-69c40ac547864e77862a43037419a05d.html" target="element"> Goods forwarders </a> </td>
 																		<td> <a href="../elements/id-4c5a2cfc85e344f6a12a43e394cb1c9f.html" target="element"> Transport Service Provider </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-b06910d8fb1040c4bb778fbd3fac9eb1.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-b06910d8fb1040c4bb778fbd3fac9eb1.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-b06910d8fb1040c4bb778fbd3fac9eb1.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-9e951e70a0ab414e92d6438383adfa62.html" target="element"> Forwarder </a> </td>
 																		<td> <a href="../elements/id-4c5a2cfc85e344f6a12a43e394cb1c9f.html" target="element"> Transport Service Provider </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-120921b7ceb94a1a832f2f9baf6221ee.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-120921b7ceb94a1a832f2f9baf6221ee.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-120921b7ceb94a1a832f2f9baf6221ee.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-d83d54b7eb2b4d20b895eb2044f499ab.html" target="element"> Autonomous vessels </a> </td>
 																		<td> <a href="../elements/id-0e326829a58641dc907198c32f249ed6.html" target="element"> Network User </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-aed8924232aa4c85a1e484bb2935162f.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-aed8924232aa4c85a1e484bb2935162f.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-aed8924232aa4c85a1e484bb2935162f.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-fa123e06126b42b0ac02f3111eb29b5d.html" target="element"> CAV/vessel/vehicle </a> </td>
 																		<td> <a href="../elements/id-0e326829a58641dc907198c32f249ed6.html" target="element"> Network User </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-35a2dcc537ec480785a21654612dd71f.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-35a2dcc537ec480785a21654612dd71f.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-35a2dcc537ec480785a21654612dd71f.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-228b2ca980774a2786e9ee53e869d877.html" target="element"> Emergency sevices </a> </td>
 																		<td> <a href="../elements/id-e64c1491ef00495783a6132e5a06c6e0.html" target="element"> Utility Fleet Operator </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-17d2b719d5d04d7188cdfed0d299fc8c.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-17d2b719d5d04d7188cdfed0d299fc8c.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-17d2b719d5d04d7188cdfed0d299fc8c.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-7a4e223910464154af7fc7ae81d2755e.html" target="element"> Maintenance operators </a> </td>
 																		<td> <a href="../elements/id-e64c1491ef00495783a6132e5a06c6e0.html" target="element"> Utility Fleet Operator </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-a86ebf0505104403888d40e0d49379eb.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-a86ebf0505104403888d40e0d49379eb.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-a86ebf0505104403888d40e0d49379eb.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-e08bdb45a6614ba9b2f2a4bd13d4bb8c.html" target="element"> Shippers </a> </td>
 																		<td> <a href="../elements/id-bfd87d2bdeeb435ebe6db5a7cb10821a.html" target="element"> Transport User </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-7ca565b48ebb4eb28f4bc36e33e94dbf.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-7ca565b48ebb4eb28f4bc36e33e94dbf.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-7ca565b48ebb4eb28f4bc36e33e94dbf.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-37d3fc2a8a8e483ea8ac27b0fd86bd89.html" target="element"> Local transportation service providers </a> </td>
 																		<td> <a href="../elements/id-4c5a2cfc85e344f6a12a43e394cb1c9f.html" target="element"> Transport Service Provider </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-161afd2f5a794a6588c0044562e89fa4.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-161afd2f5a794a6588c0044562e89fa4.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-161afd2f5a794a6588c0044562e89fa4.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-3d34889e8e19450b81b159e86b1dedf7.html" target="element"> Traveller </a> </td>
 																		<td> <a href="../elements/id-bfd87d2bdeeb435ebe6db5a7cb10821a.html" target="element"> Transport User </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-23caf217ec3c4c2d9ac7734a95a67d39.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-23caf217ec3c4c2d9ac7734a95a67d39.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-23caf217ec3c4c2d9ac7734a95a67d39.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-e64c1491ef00495783a6132e5a06c6e0.html" target="element"> Utility Fleet Operator </a> </td>
 																		<td> <a href="../elements/id-f134f1ae3d2c46d19633fd19315737f6.html" target="element"> Fleet Operator </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-5da7c1a425814dfd8917ca86fdb14dc5.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-5da7c1a425814dfd8917ca86fdb14dc5.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-5da7c1a425814dfd8917ca86fdb14dc5.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-b92b92fffc124149a43b6ecc5f443bf7.html" target="element"> Passengers </a> </td>
 																		<td> <a href="../elements/id-3d34889e8e19450b81b159e86b1dedf7.html" target="element"> Traveller </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-073cb679a8b1473cb8494a7754a16b74.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-073cb679a8b1473cb8494a7754a16b74.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-073cb679a8b1473cb8494a7754a16b74.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-e487bc0a5a9440cbb6e8e6cca6a1d14c.html" target="element"> Airport Passenger </a> </td>
 																		<td> <a href="../elements/id-b92b92fffc124149a43b6ecc5f443bf7.html" target="element"> Passengers </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-aa867b3dea9b45ed8621dfef597e9854.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-aa867b3dea9b45ed8621dfef597e9854.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/id-aa867b3dea9b45ed8621dfef597e9854.html" target="element" class="i18n-elementtype-SpecializationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-6552a7ea919d4f9ebd4b28a956d75102.html" target="element"> Pedestrian </a> </td>
 																		<td> <a href="../elements/id-0e326829a58641dc907198c32f249ed6.html" target="element"> Network User </a> </td>
 																	</tr>
